@@ -1,0 +1,192 @@
+
+
+/*
+<!--green-->
+<div class="green none" id="green">
+    
+</div>
+<!--green-->
+
+
+<!--table-->
+<table>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN</th>
+    </tr>
+    <!--
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+      <td><i class="fas fa-times-circle close"></i></td> 
+    </tr>
+     -->
+</table>
+<!--table-->
+
+*/
+
+
+
+/**************************************************/
+/*
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.fa-times-circle{
+   cursor: pointer; 
+   float: right;
+   color: #dc3545;
+}*/
+/****************************************************/
+/*
+.green {
+    background-color: #28a745;
+    color: white;
+    padding: 8px;
+    padding-left: 15px;
+    margin-bottom: 16px;
+    transition: all 0.9s ease-in-out;
+}*/
+/*************************************************************/
+/*
+.none{
+    display: none;
+}
+*/
+
+
+
+/*
+
+<!--table-->
+<table>
+    <thead>
+        <tr>
+            <th class="expense-title">expense title</th>
+            <th class="expense-value">expense value</th>
+            <th class="delete-edit"></th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<!--table-->
+<!--template-->
+<template id="expense-row">
+    <tr>
+        <td class="expense-title"></td>
+        <td class="expense-value"></td>
+        <td class="delete-edit">
+            <img class="editRow" src="images/edit.png">
+            <img class="deleteRow" src="images/trash.png">
+        </td>                                
+    </tr>
+</template>
+<!--template-->
+*/
+
+
+/*table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+th:nth-child(3) {
+    border:none!important;
+}
+.expense-title,.expense-value{}
+.delete-edit{}
+.delete-edit img {
+    width: 31px;
+    height: 29px;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    margin-right: 5px;
+}
+.delete-edit img:hover{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.delete-edit img:active{
+    transform: scaleY(0.85);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*var btn=document.getElementById("btn");
+var title=document.getElementById("title")
+var another=document.getElementById("another")
+var ISBN=document.getElementById("ISBN")
+var table=document.querySelector("table")
+var green=document.getElementById("green");
+
+btn.addEventListener("click",function(){
+    
+    var mytr=document.createElement("tr");
+    mytr.innerHTML=`
+        <td>${title.value}</td>
+        <td>${another.value}</td>
+        <td>${ISBN.value}</td>
+        <td><i class="fas fa-times-circle" id="close"></i></td> 
+    `
+    table.appendChild(mytr);
+
+
+    green.classList.remove("none")
+    green.innerHTML='Book Added!'
+
+    setTimeout (function(){
+        green.classList.add("none")
+
+    },3000)
+
+
+
+        var close=document.getElementById("close");
+        close.addEventListener("click",function(){
+    
+            mytr.remove();
+            green.classList.remove("none")
+            green.innerHTML='Book Removed!'
+    
+            setTimeout (function(){
+                green.classList.add("none")
+    
+            },3000)
+    
+        })
+    
+            
+    
+    })*/
